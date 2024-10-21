@@ -209,7 +209,7 @@ export async function getCsrfToken() {
   return response?.csrfToken ?? ""
 }
 
-type ProvidersType = Record<
+export type ProvidersType = Record<
   LiteralUnion<BuiltInProviderType>,
   ClientSafeProvider
 >
